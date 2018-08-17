@@ -38,32 +38,32 @@ public static final Item.ToolMaterial rosegoldshovel = EnumHelper.addToolMateria
 public static final Item.ToolMaterial rosegoldhoe = EnumHelper.addToolMaterial("rosegoldhoe", 1, 60, 1.0F, 1.0F, 30);
 
 	public static void init() {
-		rose_gold_sword = new ItemRoseGoldSword(rosegoldsword).func_77655_b("rose_gold_sword").func_77637_a(RoseGoldMod.tabRoseGold);
-		rose_gold_pickaxe = new ItemRoseGoldPickaxe(rosegoldpickaxe).func_77655_b("rose_gold_pickaxe").func_77637_a(RoseGoldMod.tabRoseGold);
-		rose_gold_ingot = new Item().func_77655_b("rose_gold_ingot").func_77637_a(RoseGoldMod.tabRoseGold);
-		rose_gold_axe = new ItemRoseGoldAxe(rosegoldaxe).func_77655_b("rose_gold_axe").func_77637_a(RoseGoldMod.tabRoseGold);
-		rose_gold_shovel = new ItemRoseGoldShovel(rosegoldshovel).func_77655_b("rose_gold_shovel").func_77637_a(RoseGoldMod.tabRoseGold);
-		rose_gold_hoe = new ItemRoseGoldHoe(rosegoldhoe).func_77655_b("rose_gold_hoe").func_77637_a(RoseGoldMod.tabRoseGold);
+		rose_gold_sword = new ItemRoseGoldSword(rosegoldsword).setUnlocalizedName("rose_gold_sword").setCreativeTab(RoseGoldMod.tabRoseGold);
+		rose_gold_pickaxe = new ItemRoseGoldPickaxe(rosegoldpickaxe).setUnlocalizedName("rose_gold_pickaxe").setCreativeTab(RoseGoldMod.tabRoseGold);
+		rose_gold_ingot = new Item().setUnlocalizedName("rose_gold_ingot").setCreativeTab(RoseGoldMod.tabRoseGold);
+		rose_gold_axe = new ItemRoseGoldAxe(rosegoldaxe).setUnlocalizedName("rose_gold_axe").setCreativeTab(RoseGoldMod.tabRoseGold);
+		rose_gold_shovel = new ItemRoseGoldShovel(rosegoldshovel).setUnlocalizedName("rose_gold_shovel").setCreativeTab(RoseGoldMod.tabRoseGold);
+		rose_gold_hoe = new ItemRoseGoldHoe(rosegoldhoe).setUnlocalizedName("rose_gold_hoe").setCreativeTab(RoseGoldMod.tabRoseGold);
 		
-		rose_gold_helmet = new ItemRoseGoldArmour(rosegoldarmour, 1, 0).func_77655_b("rose_gold_helmet").func_77637_a(RoseGoldMod.tabRoseGold);
-		rose_gold_chestplate = new ItemRoseGoldArmour(rosegoldarmour, 1, 1).func_77655_b("rose_gold_chestplate").func_77637_a(RoseGoldMod.tabRoseGold);
-		rose_gold_leggings = new ItemRoseGoldArmour(rosegoldarmour, 2, 2).func_77655_b("rose_gold_leggings").func_77637_a(RoseGoldMod.tabRoseGold);
-		rose_gold_boots = new ItemRoseGoldArmour(rosegoldarmour, 1, 3).func_77655_b("rose_gold_boots").func_77637_a(RoseGoldMod.tabRoseGold);
+		rose_gold_helmet = new ItemRoseGoldArmour(rosegoldarmour, 1, 0).setUnlocalizedName("rose_gold_helmet").setCreativeTab(RoseGoldMod.tabRoseGold);
+		rose_gold_chestplate = new ItemRoseGoldArmour(rosegoldarmour, 1, 1).setUnlocalizedName("rose_gold_chestplate").setCreativeTab(RoseGoldMod.tabRoseGold);
+		rose_gold_leggings = new ItemRoseGoldArmour(rosegoldarmour, 2, 2).setUnlocalizedName("rose_gold_leggings").setCreativeTab(RoseGoldMod.tabRoseGold);
+		rose_gold_boots = new ItemRoseGoldArmour(rosegoldarmour, 1, 3).setUnlocalizedName("rose_gold_boots").setCreativeTab(RoseGoldMod.tabRoseGold);
 	}
 	
 	public static void register()
 	{
-		GameRegistry.registerItem(rose_gold_sword, rose_gold_sword.func_77658_a().substring(5));
-		GameRegistry.registerItem(rose_gold_pickaxe, rose_gold_pickaxe.func_77658_a().substring(5));
-		GameRegistry.registerItem(rose_gold_ingot, rose_gold_ingot.func_77658_a().substring(5));
-		GameRegistry.registerItem(rose_gold_axe, rose_gold_axe.func_77658_a().substring(5));
-		GameRegistry.registerItem(rose_gold_shovel, rose_gold_shovel.func_77658_a().substring(5));
-		GameRegistry.registerItem(rose_gold_hoe, rose_gold_hoe.func_77658_a().substring(5));
+		GameRegistry.registerItem(rose_gold_sword, rose_gold_sword.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(rose_gold_pickaxe, rose_gold_pickaxe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(rose_gold_ingot, rose_gold_ingot.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(rose_gold_axe, rose_gold_axe.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(rose_gold_shovel, rose_gold_shovel.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(rose_gold_hoe, rose_gold_hoe.getUnlocalizedName().substring(5));
 		
-		GameRegistry.registerItem(rose_gold_helmet, rose_gold_helmet.func_77658_a().substring(5));
-		GameRegistry.registerItem(rose_gold_chestplate, rose_gold_chestplate.func_77658_a().substring(5));
-		GameRegistry.registerItem(rose_gold_leggings, rose_gold_leggings.func_77658_a().substring(5));
-		GameRegistry.registerItem(rose_gold_boots, rose_gold_boots.func_77658_a().substring(5));
+		GameRegistry.registerItem(rose_gold_helmet, rose_gold_helmet.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(rose_gold_chestplate, rose_gold_chestplate.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(rose_gold_leggings, rose_gold_leggings.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(rose_gold_boots, rose_gold_boots.getUnlocalizedName().substring(5));
 	}
 	
 	public static void registerRenders()
@@ -83,6 +83,6 @@ public static final Item.ToolMaterial rosegoldhoe = EnumHelper.addToolMaterial("
 	
 	public static void registerRender(Item item)
 	{
-		Minecraft.func_71410_x().func_175599_af().func_175037_a().func_178086_a(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.func_77658_a().substring(5), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
 	}
 }
