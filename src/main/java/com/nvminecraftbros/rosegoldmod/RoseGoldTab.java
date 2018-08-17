@@ -9,11 +9,11 @@ public class RoseGoldTab extends CreativeTabs{
 
 	public RoseGoldTab(String label) {
 		super(label);
-		this.func_78025_a("rose_gold.png");
+		this.setBackgroundImageName("rose_gold.png");
 	}
 
 	@Override
-	public Item func_78016_d() {
+	public Item getTabIconItem() {
 		return RoseGoldItems.rose_gold_ingot;
 	}
 }
